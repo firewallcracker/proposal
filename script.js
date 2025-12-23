@@ -163,16 +163,30 @@ let touchStartX = 0;
 let touchEndX = 0;
 
 document.addEventListener('touchstart', function(event) {
-    touchStartX = event.changedTouches[0].screenX;
+    const modal = document.getElementById('fullscreenModal');
+    // Only capture touch if fullscreen modal is not open
+    if (!modal || modal.style.display !== 'block') {
+        touchStartX = event.changedTouches[0].screenX;
+    }
 });
 
 document.addEventListener('touchend', function(event) {
-    touchEndX = event.changedTouches[0].screenX;
-    handleSwipe();
+    const modal = document.getElementById('fullscreenModal');
+    // Only process swipe if fullscreen modal is not open
+    if (!modal || modal.style.display !== 'block') {
+        touchEndX = event.changedTouches[0].screenX;
+        handleSwipe();
+    }
 });
 
 function handleSwipe() {
     const book = document.getElementById('book');
+    const modal = document.getElementById('fullscreenModal');
+    
+    // Don't process swipes if fullscreen modal is open
+    if (modal && modal.style.display === 'block') {
+        return;
+    }
     
     if (book.style.display === 'block') {
         const swipeThreshold = 50;
