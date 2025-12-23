@@ -100,10 +100,40 @@ function updatePageIndicator() {
     });
 }
 
-// Keyboard navigation
+// Fullscreen Image Functions
+function openFullscreen(img) {
+    const modal = document.getElementById('fullscreenModal');
+    const fullscreenImg = document.getElementById('fullscreenImage');
+    
+    fullscreenImg.src = img.src;
+    modal.style.display = 'block';
+    
+    // Prevent body scroll
+    document.body.style.overflow = 'hidden';
+}
+
+function closeFullscreen() {
+    const modal = document.getElementById('fullscreenModal');
+    modal.style.display = 'none';
+    
+    // Restore body scroll
+    document.body.style.overflow = 'auto';
+}
+
+// Keyboard navigation - Single event listener
 document.addEventListener('keydown', function(event) {
     const book = document.getElementById('book');
+    const modal = document.getElementById('fullscreenModal');
     
+    // Handle fullscreen modal first
+    if (modal && modal.style.display === 'block') {
+        if (event.key === 'Escape') {
+            closeFullscreen();
+        }
+        return; // Don't process other keys when fullscreen is open
+    }
+    
+    // Handle book navigation
     if (book.style.display === 'block') {
         if (event.key === 'ArrowRight' || event.key === ' ') {
             event.preventDefault();

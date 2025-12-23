@@ -45,7 +45,7 @@
                     <div class="page-content">
                         <div class="photo-section">
                             <div class="photo-frame">
-                                <img src="pic1.jpeg" alt="Prince Kumar" class="profile-photo">
+                                <img src="pic1.jpeg" alt="Prince Kumar" class="profile-photo" onclick="openFullscreen(this)">
                             </div>
                             <h4 class="page-name">Prince Kumar</h4>
                         </div>
@@ -53,7 +53,7 @@
                         <div class="info-section">
                             <div class="info-item">
                                 <span class="label">Age:</span>
-                                <span class="value">25 years</span>
+                                <span class="value">26 years</span>
                             </div>
                             <div class="info-item">
                                 <span class="label">Height:</span>
@@ -90,7 +90,7 @@
                     <div class="page-content">
                         <div class="photo-section">
                             <div class="photo-frame small">
-                                <img src="pic2.jpeg" alt="Prince Kumar" class="profile-photo">
+                                <img src="pic2.jpeg" alt="Prince Kumar" class="profile-photo" onclick="openFullscreen(this)">
                             </div>
                         </div>
                         
@@ -99,7 +99,7 @@
                             <div class="education-item">
                                 <strong>B.Tech in Electronics and Telecommunication</strong>
                                 <p>Army Institute of Technology, Pune</p>
-                                <p class="year">2021</p>
+                                <p class="year">2020-2024</p>
                             </div>
                         </div>
 
@@ -109,7 +109,7 @@
                                 <strong>Software Engineer</strong>
                                 <p>Oracle Financial Software Ltd.</p>
                                 <p>Bengaluru, Karnataka</p>
-                                <p class="salary">Annual Income: 15 - 20 LPA</p>
+                            
                             </div>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="page-content">
                         <div class="photo-section">
                             <div class="photo-frame small">
-                                <img src="pic3.jpeg" alt="Prince Kumar" class="profile-photo">
+                                <img src="pic3.jpeg" alt="Prince Kumar" class="profile-photo" onclick="openFullscreen(this)">
                             </div>
                         </div>
                         
@@ -135,7 +135,7 @@
                             <div class="family-item">
                                 <div class="info-item">
                                     <span class="label">Father:</span>
-                                    <span class="value">Sanjay Kumar</span>
+                                    <span class="value">SUB Sanjay Kumar</span>
                                 </div>
                                 <div class="info-item">
                                     <span class="label">Occupation:</span>
@@ -147,11 +147,11 @@
                                 </div>
                                 <div class="info-item">
                                     <span class="label">Occupation:</span>
-                                    <span class="value">Housewife</span>
+                                    <span class="value">Housemaker</span>
                                 </div>
                                 <div class="info-item">
                                     <span class="label">Brother:</span>
-                                    <span class="value">Piyush</span>
+                                    <span class="value">Piyush Kumar</span>
                                 </div>
                                 <div class="info-item">
                                     <span class="label">Qualification:</span>
@@ -219,6 +219,12 @@
         </div>
 
         <button class="close-book-btn" id="closeBtn" onclick="closeBook()" style="display: none;">✕</button>
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div class="fullscreen-modal" id="fullscreenModal" onclick="closeFullscreen()">
+        <span class="close-fullscreen" onclick="closeFullscreen()">✕</span>
+        <img class="fullscreen-image" id="fullscreenImage" onclick="event.stopPropagation()">
     </div>
 
     <script src="script.js"></script>
