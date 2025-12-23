@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Prince Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ganesh-bg"></div>
+    
+    <div class="container">
+        <!-- Cover Page -->
+        <div class="book-cover" id="cover">
+            <div class="cover-ganesh">
+                <img src="ganesh.jfif" alt="Ganesh" class="ganesh-image">
+            </div>
+            <div class="cover-content">
+                <div class="decorative-border">
+                    <h1 class="cover-title">॥ श्री गणेशाय नमः ॥</h1>
+                    <div class="ornament">❦</div>
+                    <h2 class="biodata-text">Biodata</h2>
+                    <h3 class="name">Prince Kumar</h3>
+                    <div class="cover-details">
+                        <p class="profession">Software Engineer</p>
+                        <p class="location">Bengaluru, Karnataka</p>
+                    </div>
+                    <div class="ornament bottom">❦</div>
+                </div>
+            </div>
+            <button class="open-book-btn" onclick="openBook()">View Profile</button>
+        </div>
+
+        <!-- Book Pages Container -->
+        <div class="book" id="book" style="display: none;">
+            
+            <!-- Page 1: Personal Info & Photo -->
+            <div class="page-container" id="page1">
+                <div class="page">
+                    <div class="page-header">
+                        <h3>Personal Information</h3>
+                        <div class="page-number">1</div>
+                    </div>
+                    <div class="page-content">
+                        <div class="photo-section">
+                            <div class="photo-frame">
+                                <img src="pic1.jpeg" alt="Prince Kumar" class="profile-photo">
+                            </div>
+                            <h4 class="page-name">Prince Kumar</h4>
+                        </div>
+                        
+                        <div class="info-section">
+                            <div class="info-item">
+                                <span class="label">Age:</span>
+                                <span class="value">25 years</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Height:</span>
+                                <span class="value">5 feet 8 inch</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Date of Birth:</span>
+                                <span class="value">To be shared</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Religion:</span>
+                                <span class="value">Hindu</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Caste:</span>
+                                <span class="value">To be shared</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Mother Tongue:</span>
+                                <span class="value">Hindi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2: Education & Career -->
+            <div class="page-container" id="page2" style="display: none;">
+                <div class="page">
+                    <div class="page-header">
+                        <h3>Education & Career</h3>
+                        <div class="page-number">2</div>
+                    </div>
+                    <div class="page-content">
+                        <div class="photo-section">
+                            <div class="photo-frame small">
+                                <img src="pic2.jpeg" alt="Prince Kumar" class="profile-photo">
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4>Educational Background</h4>
+                            <div class="education-item">
+                                <strong>B.Tech in Electronics and Telecommunication</strong>
+                                <p>Army Institute of Technology, Pune</p>
+                                <p class="year">2021</p>
+                            </div>
+                        </div>
+
+                        <div class="info-section">
+                            <h4>Professional Details</h4>
+                            <div class="work-item">
+                                <strong>Software Engineer</strong>
+                                <p>Oracle Financial Software Ltd.</p>
+                                <p>Bengaluru, Karnataka</p>
+                                <p class="salary">Annual Income: 15 - 20 LPA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3: Family Background -->
+            <div class="page-container" id="page3" style="display: none;">
+                <div class="page">
+                    <div class="page-header">
+                        <h3>Family Background</h3>
+                        <div class="page-number">3</div>
+                    </div>
+                    <div class="page-content">
+                        <div class="photo-section">
+                            <div class="photo-frame small">
+                                <img src="pic3.jpeg" alt="Prince Kumar" class="profile-photo">
+                            </div>
+                        </div>
+                        
+                        <div class="info-section">
+                            <h4>Family Details</h4>
+                            <div class="family-item">
+                                <div class="info-item">
+                                    <span class="label">Father:</span>
+                                    <span class="value">Sanjay Kumar</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Occupation:</span>
+                                    <span class="value">Ex Army</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Mother:</span>
+                                    <span class="value">Lalti Devi</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Occupation:</span>
+                                    <span class="value">Housewife</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Brother:</span>
+                                    <span class="value">Piyush</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Qualification:</span>
+                                    <span class="value">B.Tech Computer Science</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Family Type:</span>
+                                    <span class="value">Nuclear</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 4: Contact Information -->
+            <div class="page-container" id="page4" style="display: none;">
+                <div class="page">
+                    <div class="page-header">
+                        <h3>Contact Information</h3>
+                        <div class="page-number">4</div>
+                    </div>
+                    <div class="page-content">
+                        <div class="contact-section">
+                            <div class="contact-item">
+                                <div class="info-item">
+                                    <span class="label">Mobile:</span>
+                                    <span class="value">Available on request</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Email:</span>
+                                    <span class="value">Available on request</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Address:</span>
+                                    <span class="value">Nurpur Chandmari, Danapur Cantt, Patna 801503</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Current Location:</span>
+                                    <span class="value">Bengaluru, Karnataka</span>
+                                </div>
+                            </div>
+                            
+                            <div class="thank-you">
+                                <div class="ganesh-symbol">🕉️</div>
+                                <p>Thank you for your interest</p>
+                                <div class="ornament">❦</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="navigation">
+                <button class="nav-btn prev-btn" onclick="prevPage()" id="prevBtn" style="display: none;">❮ Previous</button>
+                <div class="page-indicator">
+                    <span class="dot active" onclick="goToPage(1)"></span>
+                    <span class="dot" onclick="goToPage(2)"></span>
+                    <span class="dot" onclick="goToPage(3)"></span>
+                    <span class="dot" onclick="goToPage(4)"></span>
+                </div>
+                <button class="nav-btn next-btn" onclick="nextPage()" id="nextBtn">Next ❯</button>
+            </div>
+        </div>
+
+        <button class="close-book-btn" id="closeBtn" onclick="closeBook()" style="display: none;">✕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
